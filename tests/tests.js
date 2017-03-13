@@ -3,40 +3,25 @@
 
   var app = require('../app/index.js');
 
-  describe("Employee class to show list of company employees", function() {
+   describe("A game with players as users", function() {
 
-    it("The employee should be an object type of `object`, and an instance of the `Employee` class", function() {
-      var Joshua= new employee('Joshua','Accounts lead','Accounts',200000);
-      expect(typeof Joshua).toEqual(typeof {});
-      expect(app.Joshua instanceof Employee).toBeTruthy();
+    it("The player should be a type of `object`, and an instance of the `User` class", function() {
+      var mary= new app.User('mary');
+      expect(mary instanceof app.User).toBeTruthy();
+      expect(typeof mary).toEqual(typeof {});
     });
 
-  });
-
-
-
-  describe(" The base salaries should be added to the main salary", function() {
-
-    it("The function salary should add the 'base salary' to 'salary' ", function() {
-      var Joshua= new employee('Joshua','Accounts lead','Accounts',200000);
-      expect(app.Joshua.salary(20000)).toEqual(250000);
-      expect(app.Joshua.role).toBeTruthy('Accounts lead');
+    it("The player name should be the argument passed", function() {
+      var john  = new app.User('john');
+      expect(john.name).toBe('john');
     });
 
-  });
-
-  describe(" Expect all the object instances to inherit the base salary", function() {
-
-    it("The 'Base salary' to be applied to all instances ", function() {
-      var Joshua= new employee('Joshua','Accounts lead','Accounts',200000);
-      expect(app.Jane.basesalary).toEqual(250000);
-      expect(app.Joshua.role).toBeTruthy('Accounts lead');
-    });
-
+    
   });
 
 
 
 
+  
 
 
