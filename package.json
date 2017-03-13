@@ -1,0 +1,23 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "OOP",
+  "main": "app.index.js",
+  "scripts": {
+    "test": "jasmine tests/tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/debbieooo/oop.git"
+  },
+  "keywords": [
+    "Deborah",
+    "Oni"
+  ],
+  "author": "Deborah Oni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/debbieooo/oop/issues"
+  },
+  "homepage": "https://github.com/debbieooo/oop#readme"
+}
