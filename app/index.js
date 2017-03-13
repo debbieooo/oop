@@ -1,7 +1,7 @@
 // A game with users as players who have defailt lives of 100
 // Functions such as 'giveLife', 'stealLife' are used to exchange lives between users
 
-
+//OOP
 
 function User(name){
 	this.name=name;
