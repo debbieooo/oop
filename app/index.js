@@ -2,7 +2,7 @@
 // Functions such as 'giveLife', 'stealLife' are used to exchange lives between users
 
 //OOP
-
+//parent class User
 function User(name){
 	this.name=name;
 	this.life=100;
@@ -13,6 +13,24 @@ function User(name){
 		
 	}
 }
+// child class player
+function player(name){
+
+	this.name = name;
+	this.life = 50;
+	this.giveLife= function (targetPlayer){
+
+		targetPlayer.life +=3;
+		this.life-=3;
+		
+	}
+
+
+}
+
+//make child class inherit parent class, inheritance implementation
+
+player.prototype = new User();
 
 
 
