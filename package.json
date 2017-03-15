@@ -2,7 +2,7 @@
   "name": "oop",
   "version": "1.0.0",
   "description": "OOP",
-  "main": "app.index.js",
+  "main": "app.oop.js",
   "scripts": {
     "test": "jasmine tests/tests.js"
   },

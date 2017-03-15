@@ -50,6 +50,7 @@ User.prototype.stealLife = function(targetPlayer){
 
 
 module.exports.User=User;
+module.exports.player=player;
 
 
 

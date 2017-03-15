@@ -74,6 +74,26 @@
 
     });
 
+  //tests for inheritance
+
+  it("Each player user should have life of 50", function() {
+      var james  = new app.player('james');
+      expect(james.life).toBe(50);
+
+      var wendy = new app.User('wendy');
+      expect(wendy.life).toBe(100);
+      wendy.stealLife(james);
+      expect(wendy.life).toBe(101);
+      expect(james.life).toBe(49);
+
+      expect(wendy.luck).toBe(32);
+      expect(james.luck).toBe(28);
+
+
+      
+
+    });
+
 
 
 
